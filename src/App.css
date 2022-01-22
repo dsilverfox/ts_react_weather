@@ -1,5 +1,51 @@
-.App {
+body {
+  background-color: black;
   text-align: center;
+  height: 100vh;
+  margin-top: 0;
 }
 
+.main {
+  color:blueviolet;
+  text-align: center;
+  font-size: 100px;
+}
+
+li {
+  font-size:56px;
+  text-align: center;
+  font-weight:bolder;
+}
+
+/*Text Animations*/
+.main {
+	-webkit-animation: main 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: main 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*Keyframes*/
+@-webkit-keyframes main {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes main {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
 
