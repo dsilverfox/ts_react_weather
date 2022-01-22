@@ -23,10 +23,10 @@ class FetchWeather extends React.Component<LocationProps , {}> {
     const key = '750ee8e3454df1bae3ec03c8ae23da35';
     const units = "imperial";
     const response = await fetch(`${baseURL}lat=${this.props.location.latitude}&lon=${this.props.location.longitude}&units=${units}&appid=${key}`);
-        const json = await response.json();
-        this.setState({weather: response.json})
-        console.log(json)
-    }
+    const json = await response.json();
+    this.setState({weather: response.json})
+    console.log(json)
+        }
 
 
     render(){

@@ -1,5 +1,5 @@
 import React from 'react';
-import FetchWeather from './FetchWeather';
+// import FetchWeather from './FetchWeather';
 
 class FetchLocation extends React.Component {
     state={
@@ -20,7 +20,7 @@ class FetchLocation extends React.Component {
     render () {
     return (
         <div>
-         <FetchWeather location={this.state.location}/>
+         {/* <FetchWeather location={this.state.location}/> */}
         </div>
         )
     };
